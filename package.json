@@ -1,0 +1,44 @@
+{
+    "name": "express-react-mongo",
+    "version": "1.0.0",
+    "description": "Express, React and Mongo",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "build": "cross-env NODE_ENV=\"production\" PUBLIC_URL='/absproxy/3000/' webpack --config client/webpack.config.js",
+        "dev": "cross-env  NODE_ENV=\"development\" PUBLIC_URL='/absproxy/3000/' nodemon --ignore ./client/ index.js",
+        "start:dev": "npm run build && npm run dev"
+    },
+    "keywords": [
+        "express",
+        "react",
+        "template",
+        "babel",
+        "webpack"
+    ],
+    "author": "srikanth reddy",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^1.7.9",
+        "cors": "^2.8.5",
+        "express": "^4.17.3",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.17.5",
+        "@babel/preset-env": "^7.16.11",
+        "@babel/preset-react": "^7.16.7",
+        "@svgr/webpack": "^6.2.1",
+        "babel-loader": "^8.2.3",
+        "cross-env": "^7.0.3",
+        "dotenv": "^16.0.0",
+        "html-webpack-plugin": "^5.5.0",
+        "nodemon": "^2.0.15",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.70.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-middleware": "^5.3.1",
+        "webpack-hot-middleware": "^2.25.1"
+    }
+}
